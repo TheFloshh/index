@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores Económicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indicadores Económicos</h1>
+    </header>
+    
+    <main>
+        <table id="tablaIndicadores">
+            <thead>
+                <tr>
+                    <th>Moneda</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
+        <img src="dolar.jpg" alt="Dólar" style="width: 25%; height: auto; border-radius: 8px;">
+        <img src="euro.jpg" alt="Euro" style="width: 25%; height: auto; border-radius: 8px;">
+    </div>
+
+    <script src="api.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Llamar a la función para cargar los indicadores económicos
+            cargarIndicadoresEconomicos();
+        });
+    </script>
+</body>
+</html>
